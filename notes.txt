@@ -1,0 +1,16 @@
+web3.js: collection of libarries that allow you to interact with a local or remote ethereum node.
+
+
+instance:
+
+const instance = await Faucet.deployed()
+
+instance.addFunds({from: accounts[0], value:"2000000000000000000"})
+instance.addFunds({from: accounts[3], value:"2000000000000000000"})
+instance.addFunds({from: accounts[6], value:"2000000000000000000"})
+
+instance.getAllFunders()
+instance.getFunderAtIndex(1)
+
+instance.withdraw("500000000000000000", {from: accounts[1]})
+
